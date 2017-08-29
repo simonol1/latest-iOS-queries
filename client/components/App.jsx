@@ -5,7 +5,7 @@ import Questions from './Questions'
 const App = () => (
   <Router>
     <div className='app-container'>
-      <h1>Latest iOS Queries</h1>
+      <h1>Latest iOS Questions & Answers</h1>
       <Route exact path="/" component={Questions} />
     </div>
   </Router>

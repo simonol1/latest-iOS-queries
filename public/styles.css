@@ -1,7 +1,17 @@
 body {
-  background-color: "blue";
+    background-color: lightGrey;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+h5 {
+  border: 2px solid black;
+  display: inline-block;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
 }
 
 button {
-  background-color: "red";
+    background-color:;
 }

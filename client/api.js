@@ -13,3 +13,5 @@ const getQuestions = (callback) => {
       }
     })
 }
+
+export default getQuestions

@@ -6,7 +6,7 @@
 - Outline MVP
 - Research how to scrape the API of stackOverflow
 - Create a list of questions which are related to iOS
-- Show
+- Show users avatar, number of comments, score, list of tags and answer count
 - Caching?
 - Network timeouts?
 - New items pushed onto previously loaded questions with no duplicates?
@@ -21,7 +21,7 @@
 - As a user, I want to see the number of answers for each question
 
 ## MVP
-The user can click see all of the latest iOS related questions and answers on the app.
+The user can click see all of the latest iOS related questions from StackOverflow. They can click on the question title and see the number of comments, answer count and score.
 
 ## Wireframe:
 https://wireframe.cc/1npPuy

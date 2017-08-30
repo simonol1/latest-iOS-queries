@@ -10,11 +10,17 @@ const corsOptions = {
   credentials: true
 }
 
+var questions = require('./routes/questions')
+
 var server = express()
 server.use(cors(corsOptions))
 
 server.use(bodyParser.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
+server.use('/api/questions', questions)
 
-module.exports = server
+module.exports = function(db) {
+  server.set('db', db)
+  return server
+}

@@ -7,7 +7,7 @@ import './setup-dom'
 
 App.prototype.componentDidMount = () => {}
 
-// test('Hello World renders on App', t => {
-//   const wrapper = shallow(<App />)
-//   t.is(wrapper.find('h1').text(), 'Hello World')
-// })
+test('Header renders on homepage', t => {
+  const wrapper = shallow(<App />)
+  t.is(wrapper.find('h1').text(), 'Latest iOS Questions & Answers')
+})

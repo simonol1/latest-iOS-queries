@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {connect} from 'react-redux'
-import {fetchPosts} from '../actions'
+import {fetchQuestions} from '../actions'
 
 class LoadQuestions extends React.Component {
   constructor(props) {
@@ -11,19 +11,10 @@ class LoadQuestions extends React.Component {
     }
   }
 
-  handleChange(e) {
-    this.setState({question: e.target.value })
-  }
-
   render() {
     return (
       <div>
-        <input type='text' name='question' value={this.state.question} onChange={this.handleChange.bind(this)}/>
-        <button
-          onClick={()=> this.props.dispatch(fetchPosts(this.state.question))} >
-          Give Me Those Sweet Memes
-        </button>
-
+      {this.props.dispatch(fetchQuestions(this.state.question))}
       </div>
     )
   }

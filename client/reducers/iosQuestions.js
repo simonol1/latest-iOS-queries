@@ -1,8 +1,8 @@
 function iosQuestions (state = [], action) {
   switch (action.type) {
-    case 'RECEIVE_POSTS':
+    case 'RECEIVE_QUESTION':
       return [
-        ...action.posts
+        ...action.question
       ]
     default:
       return state

@@ -10,12 +10,14 @@ class LoadQuestions extends React.Component {
       question: ''
     }
   }
+  componentWillMount() {
+    this.props.dispatch(fetchQuestions(this.state.question))
+  }
+
 
   render() {
     return (
-      <div>
-      {this.props.dispatch(fetchQuestions(this.state.question))}
-      </div>
+      <div>Questions</div>
     )
   }
 }

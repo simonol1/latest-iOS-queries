@@ -1,13 +1,14 @@
 import React from 'react'
 
 
-const QuestionList = (questions) => {
+const QuestionList = (props) => {
   return (
     <div>
-      <p>Title: {questions.title}</p>
-      <p>Number of Comments: {questions.numOfComments}</p>
-      <p>Number of Answers: {questions.numOfAnswers}</p>
-      <p>Score: {questions.score}</p>
+      <p>Title: {props.title}</p>
+      <p>Avatar: {props.profile_image}</p>
+      <p>Answered: {props.is_answered}</p>
+      <p>Tags: {props.tags}</p>
+      <p>Score: {props.score}</p>
     </div>
   )
 }

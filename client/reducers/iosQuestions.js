@@ -2,7 +2,8 @@ function iosQuestions (state = [], action) {
   switch (action.type) {
     case 'RECEIVE_QUESTION':
       return [
-        ...action.question
+        ...state,
+        question: action.question
       ]
     default:
       return state

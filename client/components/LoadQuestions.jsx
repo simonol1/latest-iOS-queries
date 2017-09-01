@@ -13,7 +13,7 @@ class LoadQuestions extends React.Component {
   }
   componentDidMount() {
     this.props.dispatch(fetchQuestions(this.state.question))
-    console.log(fetchQuestions());
+    console.log(this.state.question);
   }
 
 
@@ -29,7 +29,7 @@ class LoadQuestions extends React.Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-  question: state.question
+  question: state.iosQuestions.question
 }
 }
 

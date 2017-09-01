@@ -8,7 +8,7 @@ class LoadQuestions extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      question: []
+      question: {items:[]}
     }
   }
   componentWillMount() {
@@ -26,8 +26,7 @@ class LoadQuestions extends React.Component {
   render() {
     return (
         <div>
-          <h1>{this.question.title}</h1>
-          <QuestionList />
+          {this.state.question.items.map((question,idx) => <QuestionList question={question} key={idx} />)}
         </div>
     )
   }

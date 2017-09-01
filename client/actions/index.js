@@ -3,7 +3,7 @@ import request from 'superagent'
 export const receiveQuestion = (question) => {
   return {
     type: 'RECEIVE_QUESTION',
-    question: state
+    question
   }
 }
 export const setErrorMessage = (message) => {

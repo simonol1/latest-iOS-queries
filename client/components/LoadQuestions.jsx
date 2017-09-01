@@ -11,15 +11,22 @@ class LoadQuestions extends React.Component {
       question: []
     }
   }
-  componentDidMount() {
-    this.props.dispatch(fetchQuestions(this.state.question))
-    console.log(this.state.question);
+  componentWillMount() {
+    this.props.dispatch(fetchQuestions())
+  }
+
+  componentWillReceiveProps({question}) {
+    console.log({question});
+    this.setState({
+      question:question
+    })
   }
 
 
   render() {
     return (
         <div>
+          <h1>{this.question.title}</h1>
           <QuestionList />
         </div>
     )
@@ -27,7 +34,6 @@ class LoadQuestions extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
   question: state.iosQuestions.question
 }

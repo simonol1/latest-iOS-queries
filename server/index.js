@@ -1,10 +1,11 @@
-var server = require('./server')
+var createServer = require('./server')
 
 var env = process.env.NODE_ENV || 'development'
-var knex = require('knex')
 var config = require('../knexfile')[env]
 
-server.set('db', knex(config))
+var db = require('knex')(config)
+
+var server = createServer(db)
 
 var PORT = process.env.PORT || 3000
 

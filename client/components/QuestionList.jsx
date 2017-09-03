@@ -5,11 +5,13 @@ const QuestionList = (props) => {
   let q = props.question
   return (
     <div>
-      <h4>Title: {q.title}</h4>
-      <p>Avatar: {q.profile_image}</p>
-      <p>Answered: {q.is_answered}</p>
+      <h4>{q.title}?</h4>
+      <p><img src={q.owner.profile_image}/></p>
+      <p>Number of answers: {q.answer_count}</p>
       <p>Tags: {q.tags}</p>
       <p>Score: {q.score}</p>
+      <a href={q.link}>{q.link}</a>
+      <hr></hr>
     </div>
   )
 }

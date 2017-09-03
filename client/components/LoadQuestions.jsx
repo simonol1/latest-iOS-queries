@@ -16,7 +16,6 @@ class LoadQuestions extends React.Component {
   }
 
   componentWillReceiveProps({question}) {
-    console.log({question});
     this.setState({
       question:question
     })

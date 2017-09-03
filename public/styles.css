@@ -4,7 +4,7 @@ body {
     margin-top: 50px;
 }
 
-h5 {
+h4 {
   border: 2px solid black;
   display: inline-block;
   background-color: white;
@@ -12,6 +12,20 @@ h5 {
   padding: 5px 10px 5px 10px;
 }
 
-button {
-    background-color:;
+img {
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  margin-left: 20px;
+  border: 2px solid lightGrey;
+  border-radius: 15px;
+}
+
+hr {
+  color: grey;
+  margin-top: 25px;
+}
+
+p {
+  display:block;
 }
